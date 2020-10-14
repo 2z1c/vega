@@ -5,9 +5,17 @@ manifest:
   remotes:
     - name: upstream
       url-base: https://github.com/zephyrproject-rtos
+    - name: gerrit
+      url-base: ssh://gerrit.syriusrobotics.cn:29418
 
   projects:
     - name: zephyr
       revision: d780458bc6a16987b3ed3ed86eeee0810395e9f2
       path: zephyr
       import: True
+    - name: chameleon/indicator_button_board
+      path: indicator_button_board
+      remote: gerrit
+
+  self:
+    path: manifest-repo
