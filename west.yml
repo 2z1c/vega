@@ -21,8 +21,7 @@ manifest:
     - name: chameleon/west_extensions
       path: west_extensions
       remote: gerrit
-      import: True
 
   self:
-    path: vega
+    path: manifest-repo
     west-commands: west-commands.yml
