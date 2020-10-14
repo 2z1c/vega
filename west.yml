@@ -13,9 +13,16 @@ manifest:
       revision: d780458bc6a16987b3ed3ed86eeee0810395e9f2
       path: zephyr
       import: True
+      west-commands: scripts/west-commands.yml
     - name: chameleon/indicator_button_board
-      path: indicator_button_board
+      path: application/indicator_button_board
       remote: gerrit
 
+    - name: chameleon/west_extensions
+      path: west_extensions
+      remote: gerrit
+      import: True
+
   self:
-    path: manifest-repo
+    path: vega
+    west-commands: west-commands.yml
