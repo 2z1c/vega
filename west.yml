@@ -17,6 +17,9 @@ manifest:
     - name: chameleon/indicator_button_board
       path: application/indicator_button_board
       remote: gerrit
+    - name: chameleon/firmware/scanner_board
+      path: application/scanner_board
+      remote: gerrit
 
     - name: chameleon/west_extensions
       path: west_extensions
