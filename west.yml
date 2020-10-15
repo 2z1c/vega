@@ -14,17 +14,23 @@ manifest:
       revision: d780458bc6a16987b3ed3ed86eeee0810395e9f2
       path: zephyr
       import: True
-      west-commands: scripts/west-commands.yml
+
     - name: chameleon/indicator_button_board
       path: application/indicator_button_board
       remote: gerrit
+
     - name: chameleon/firmware/scanner_board
       path: application/scanner_board
       remote: gerrit
+
     - name: chameleon/west_extensions
       path: west_extensions
       west-commands: west-commands.yml
       remote: gerrit
 
+    - name: chameleon/ci
+      path: ci
+      remote: gerrit
+
   self:
-    path: manifest-repo
+    path: .manifest-repository
