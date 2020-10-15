@@ -1,6 +1,7 @@
 manifest:
   defaults:
     remote: upstream
+    revision: master
 
   remotes:
     - name: upstream
@@ -20,11 +21,10 @@ manifest:
     - name: chameleon/firmware/scanner_board
       path: application/scanner_board
       remote: gerrit
-
     - name: chameleon/west_extensions
       path: west_extensions
+      west-commands: west-commands.yml
       remote: gerrit
 
   self:
     path: manifest-repo
-    west-commands: west-commands.yml
